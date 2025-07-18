@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 এডমিন লগইন</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="msg" style="color: red;"></p>
+  </div>
+  <script>
+    function login() {
+      const u = document.getElementById('username').value;
+      const p = document.getElementById('password').value;
+      if (u === "admin" && p === "brta123") {
+        localStorage.setItem("adminLoggedIn", "yes");
+        window.location.href = "admin.html";
+      } else {
+        document.getElementById("msg").textContent = "❌ ভুল ইউজারনেম বা পাসওয়ার্ড!";
+      }
+    }
+  </script>
+</body>
+</html>

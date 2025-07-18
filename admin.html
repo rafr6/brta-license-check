@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>লাইসেন্স যুক্ত করুন</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (localStorage.getItem("adminLoggedIn") !== "yes") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>নতুন লাইসেন্স যুক্ত করুন</h2>
+    <input type="text" id="license" placeholder="লাইসেন্স নাম্বার" />
+    <input type="text" id="name" placeholder="মালিকের নাম" />
+    <input type="text" id="father" placeholder="পিতার নাম" />
+    <input type="date" id="dob" />
+    <input type="text" id="type" placeholder="লাইসেন্স ধরন" />
+    <input type="date" id="issue" />
+    <input type="date" id="expiry" />
+    <button onclick="addLicense()">যুক্ত করুন</button>
+    <button onclick="logout()">Logout</button>
+    <p id="msg"></p>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

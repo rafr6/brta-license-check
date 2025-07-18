@@ -1,0 +1,5 @@
+
+body { font-family: 'Segoe UI', sans-serif; background: #eef2f5; }
+.container { max-width: 500px; margin: 40px auto; background: white; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+input, button { width: 100%; padding: 10px; margin: 8px 0; }
+button { background: #007b5e; color: white; border: none; cursor: pointer; }

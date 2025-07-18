@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>BRTA লাইসেন্স যাচাই</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>বাংলাদেশ রোড ট্রান্সপোর্ট অথরিটি</h1>
+    <h2>ড্রাইভিং লাইসেন্স যাচাই</h2>
+    <input type="text" id="licenseNumber" placeholder="লাইসেন্স নাম্বার দিন" />
+    <button onclick="searchLicense()">অনুসন্ধান করুন</button>
+    <div id="result"></div>
+    <a href="login.html">🔐 এডমিন লগইন</a>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
